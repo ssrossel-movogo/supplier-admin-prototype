@@ -4,6 +4,8 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
+import { ApiKeyGuard } from "@/components/api-key-guard"
+import { Suspense } from "react"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -22,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="da">
       <body className={`font-sans antialiased`}>
-        {children}
+        <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Indlæser...</div>}>
+          <ApiKeyGuard>{children}</ApiKeyGuard>
+        </Suspense>
         <Toaster />
         <Analytics />
       </body>
