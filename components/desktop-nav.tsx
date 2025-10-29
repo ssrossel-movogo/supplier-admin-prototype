@@ -78,7 +78,7 @@ export function DesktopNav() {
                 pathname === route.href ? "bg-accent text-accent-foreground" : "text-muted-foreground",
               )}
             >
-              <route.icon className={cn("h-5 w-5", pathname === route.href ? "text-white" : "text-muted-foreground")} />
+              <route.icon className={cn("h-5 w-5", pathname === route.href ? "text-accent-foreground" : "text-muted-foreground")} />
               {route.label}
             </Link>
           ))}
