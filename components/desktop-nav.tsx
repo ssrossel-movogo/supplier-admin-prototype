@@ -64,7 +64,7 @@ export function DesktopNav() {
   return (
     <div className="hidden md:flex h-full w-64 flex-col border-r bg-card">
       <div className="p-6">
-        <h2 className="text-xl font-bold tracking-tight">Riddance Admin</h2>
+        <h2 className="text-xl font-bold tracking-tight">Movogo Admin</h2>
         <p className="text-sm text-muted-foreground mt-1">Leverandør Portal</p>
       </div>
       <ScrollArea className="flex-1 px-3">

@@ -77,7 +77,7 @@ export function MobileNav() {
       <SheetContent side="left" className="w-72 p-0">
         <ScrollArea className="h-full py-6">
           <div className="px-3 py-2">
-            <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">Riddance Admin</h2>
+            <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">Movogo Admin</h2>
             <div className="space-y-1">
               {routes.map((route) => (
                 <Link
