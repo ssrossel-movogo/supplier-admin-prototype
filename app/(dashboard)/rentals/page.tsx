@@ -161,7 +161,7 @@ export default function RentalsPage() {
 
   return (
     <PullToRefresh onRefresh={handleRefresh} className="h-full">
-      <div className="p-4 md:p-6 space-y-6">
+      <div className="p-4 md:p-6 space-y-6 max-w-6xl">
         {/* Header with create button */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="min-w-0">

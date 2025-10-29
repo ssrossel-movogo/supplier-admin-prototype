@@ -41,7 +41,7 @@ export default function NewRentalPage() {
   const totalPrice = duration * dailyRate
 
   return (
-    <div className="p-4 md:p-6 space-y-6">
+    <div className="p-4 md:p-6 space-y-6 max-w-6xl">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center gap-4">
         <Button variant="ghost" size="icon" asChild className="flex-shrink-0">

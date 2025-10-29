@@ -111,7 +111,7 @@ export default function BillingDetailPage({ params }: { params: { id: string } }
   const daysUntilDue = Math.ceil((new Date(invoice.dueDate).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
 
   return (
-    <div className="p-4 md:p-6 space-y-6">
+    <div className="p-4 md:p-6 space-y-6 max-w-6xl">
       {/* Header */}
       <div className="space-y-4">
         <div className="flex items-center gap-2">

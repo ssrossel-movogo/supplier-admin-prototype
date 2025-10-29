@@ -216,7 +216,7 @@ export default function CustomerDetailPage({ params }: { params: { id: string } 
   const creditPercentage = (customer.creditUsed / customer.creditLimit) * 100
 
   return (
-    <div className="p-4 md:p-6 space-y-6">
+    <div className="p-4 md:p-6 space-y-6 max-w-6xl">
       {/* Header */}
       <div className="space-y-4">
         <div className="flex items-start gap-3">

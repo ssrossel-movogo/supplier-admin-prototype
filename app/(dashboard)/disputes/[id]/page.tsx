@@ -175,7 +175,7 @@ export default function DisputeDetailPage() {
   const StatusIcon = statusConfig[mockDispute.status as keyof typeof statusConfig].icon
 
   return (
-    <div className="p-4 md:p-6 space-y-6">
+    <div className="p-4 md:p-6 space-y-6 max-w-6xl">
       {/* Header */}
       <div className="space-y-4">
         <div className="flex items-center gap-2">
